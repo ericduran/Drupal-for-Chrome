@@ -1,0 +1,20 @@
+{
+  "name": "Drupal for Chrome",
+  "version": "0.4",
+  "description": "Provides Drupal specific debugging information for chrome.",
+  "permissions": ["tabs"],
+  "background_page": "background.html",
+  "icons": { "48": "images/icon48.png",
+          "128": "images/icon128.png" },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["scripts/jquery.js", "scripts/client_script.js"]
+    }
+  ],
+  "page_action": {
+    "default_icon": "images/icon19.png",
+    "default_title": "Drupal for Chrome Enabled",
+    "default_popup": "popup.html"
+  }
+}
