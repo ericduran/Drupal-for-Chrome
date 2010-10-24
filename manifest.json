@@ -8,7 +8,7 @@
           "128": "images/icon128.png" },
   "content_scripts": [
     {
-      "matches": ["http://*/*"],
+      "matches": ["http://*/*", "https://*/*"],
       "js": ["scripts/jquery.js", "scripts/client_script.js"]
     }
   ],
